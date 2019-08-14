@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Ti_OrderComment",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Order comment module for magento",
+    "authors": [
+    {
+        "name": "Ti",
+        "email": "info@titechnologies.in"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
