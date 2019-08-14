@@ -11,7 +11,7 @@
 <config>
     <modules>
         <Ti_OrderComment>
-            <version>1.0.1</version>
+            <version>1.1.2</version>
         </Ti_OrderComment>
     </modules>
     <global>
@@ -44,15 +44,20 @@
                     <agreements>Ti_OrderComment_Block_Checkout_Agreements</agreements>
                 </rewrite>
             </checkout>
+            <sales>
+                <rewrite>
+                    <order_view>Ti_OrderComment_Block_Order_View</order_view>
+                </rewrite>
+            </sales>
             <adminhtml>
                 <rewrite>
                     <sales_order_grid>Ti_OrderComment_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
                 </rewrite>
             </adminhtml>
         </blocks>
-    </global>
+ </global>
     <frontend>
-        <events>
+         <events>
             <checkout_type_onepage_save_order>
                 <observers>
                     <saveCustomerComment>
